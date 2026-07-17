@@ -1,0 +1,16 @@
+[package]
+name = "Rust-Midi-info"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+native-dialog = "0.7"
+memmap2 = "0.9"
+xz2 = "0.1.7"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
