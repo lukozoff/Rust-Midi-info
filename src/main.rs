@@ -649,7 +649,7 @@ fn main() {
             println!("Total CC Events: {}", format_num(info.total_cc_events));
             println!("File Size: {:.2} MiB", info.file_size_mib);
             println!("Tracks Count: {}", info.tracks_count);
-            println!("PPQN: {}", info.ppqn);
+            println!("PPQ: {}", info.ppqn);
             if info.duration_secs > 0.0 {
                 println!("Approx Duration: {}m {:.0}s", (info.duration_secs / 60.0) as u32, info.duration_secs % 60.0);
             }
